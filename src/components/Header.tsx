@@ -1,16 +1,17 @@
 import React from 'react'
-import link from 'next/link'
+import Link from 'next/link'
 import { FaShoppingCart } from 'react-icons/fa'
+
 
 const Header = () => {
   return (
     <header className='header'>
         <h1 className='logo'>Magical HandBags</h1>
         <nav>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/bags">Bags</a>
-            <a href="/contacts">Contacts</a>
+            <Link href="/">Home</Link>
+            <Link href="/about">About</Link>
+            <Link href="/bags">Bags</Link>
+            <Link href="/contacts">Contacts</Link>
             <FaShoppingCart style={{color:'white' , fontSize:'30px'}}/>
         </nav>
     </header>
